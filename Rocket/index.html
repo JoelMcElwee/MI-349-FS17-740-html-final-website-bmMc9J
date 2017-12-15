@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rocket</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style media="screen">
+      h1 {
+        font-size: 30px;
+        transform: rotate(-45deg);
+        text-align: center;
+        position: relative;
+        right: 25px;
+        top: 40px;
+
+      }
+      header {
+
+        height: 200px;
+      }
+      .fly {
+        animation: move 2s 1 alternate;
+      }
+      .down {
+
+      }
+      .circle {
+        color: white;
+        background-color: #fdbf0d;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 70px;
+        float: right;
+        margin: 20px 5px 5px 5px;
+        font-size: 11px;
+      }
+      .rocket {
+        position: relative;
+        top: -100px;
+        margin: 0 auto;
+
+      }
+      .nose {
+        width: 50px;
+        background-color: transparent;
+        border-top: 50px solid transparent;
+        border-left: 50px solid transparent;
+        border-bottom: 50px solid #c22424;
+        border-right: 50px solid transparent;
+        position: relative;
+        top: 200px;
+        left: 175px;
+        z-index: 1;
+      }
+      .body {
+        width: 250px;
+        height: 250px;
+        background-color: #b4b4a2;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom-left-radius: 200px;
+        border-top-right-radius: 200px;
+        transform: rotate(45deg);
+        position: relative;
+        left: 100px;
+        top: 200px;
+
+      }
+      .butt {
+        width: 150px;
+        height: 0;
+        border-left: 100px solid #c22424;
+        border-right: 100px solid #c22424;
+        border-bottom: 100px solid transparent;
+        position: relative;
+        left: 125px;
+        top: 200px;
+        z-index: -1;
+
+      }
+      .fire {
+        left: 253px;
+        bottom: -75px;;
+        margin-left:  -62px;
+        margin-top: 80px;
+        position: relative;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 200px 34px 0 34px;
+        border-color: #ff3000 transparent transparent transparent;
+        animation: burn .3s infinite linear;
+
+
+      }
+      .takeoff {
+        margin: 10px;
+      }
+      @keyframes burn {
+      	0% {border-width: 100px 34px 0 34px;}
+        25% {border-width: 50px 34px 0 34px;}
+        50% {border-width: 125px 34px 0 34px;}
+        75% {border-width: 75px 34px 0 34px;}
+      	100% {border-width: 100px 34px 0 34px;}
+      }
+
+      @keyframes move {
+        from {
+          top: 900px;
+          transform: rotate(360deg);
+        }
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button onclick="away()">TAKEOFF!!</button>
+      <a href="/">
+        <div class="circle">
+          HOME
+        </div>
+      </a>
+    </header>
+
+
+    <div id="myRocket" class="rocket">
+      <div class="nose">
+      </div>
+      <div class="body">
+        <h1>WIDDLE WOCKETS</h1>
+      </div>
+      <div class="butt">
+      </div>
+      <div class="fire">
+      </div>
+    </div>
+
+    <script>
+
+      function away () {
+        var element = document.getElementById("myRocket");
+        element.classList.toggle("fly");
+
+      }
+
+      function powerDown () {
+        var element = document.getElementById("myRocket");
+        element.classList.toggle("down");
+
+      }
+      away();
+    </script>
+  </body>
+</html>

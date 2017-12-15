@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>Account</title>
+    <style media="screen">
+      body {
+        background-color: #eeeeee;
+      }
+      header {
+        height: 200px;
+        background: url("https://thedoctorweighsin.com/wp-content/uploads/2017/04/kidsplaying.jpg");
+        background-size: cover;
+      }
+      p {
+        font-size: 20px;
+        text-align: left;
+      }
+
+      .title {
+        color: white;
+        font-size: 45px;
+        float: left;
+        margin: 20px 0 0 8px;
+      }
+
+      .info {
+        max-width: 600px;
+        background-color: white;
+        padding: 0 10px 10px 10px;
+      }
+      .home {
+        color: white;
+        background-color: #fdbf0d;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 70px;
+        float: right;
+        margin: 20px 5px 5px 5px;
+        font-size: 11px;
+      }
+      .profile {
+        background-color: white;
+        height: auto;
+        margin: 10px;
+      }
+
+      .name {
+        width: 55%;
+        position: relative;
+        font-size: 30px;
+        float: right;
+      }
+
+      .pics {
+        width: 40%;
+        height: inherit;
+        margin: 0 0 0 10px;
+        padding: 10px 0 0 0;
+
+      }
+
+      .profile-pic{
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        background: url("https://i.imgur.com/qqHrmzW.jpg");
+        background-size: cover;
+        border: 5px solid #ddd;
+        position: relative;
+      }
+
+      .little-pic {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        border: 4px solid #ccc;
+        background: url("https://i.pinimg.com/736x/6a/92/56/6a92561923e22786c8c47504a31bdd18--kid-hair-curly-hair-girls-kids.jpg");
+        background-size: cover;
+        position: relative;
+        top: -30px;
+        animation: color 5s ease infinite alternate;
+      }
+      .rec-played {
+        background-color: white;
+        margin: 10px;
+        padding: 1px 10px 10px 10px;
+        max-width: 600px;
+      }
+      .played {
+        width: 200px;
+        height: 300px;
+        background: url("https://vignette.wikia.nocookie.net/hoopz-barkley-saga/images/9/9e/Article-spacejamweb-0221.jpg/revision/latest?cb=20140705211836");
+        background-size: cover;
+        margin: 0 auto;
+      }
+      .activity-points {
+        margin: 10px;
+        background-color: white;
+        padding: 1px 10px 10px 10px;
+        max-width: 600px;
+      }
+      .prog {
+        margin: 0 auto;
+        height: 10px;
+        width: 90%;
+        background-color: limegreen;
+        border-right: 40px solid #dcd;
+      }
+      .card {
+        width: 250px;
+        height: 130px;
+        background-color: #aaa;
+        border-radius: 20px;
+      }
+      .card-line {
+        width: inherit;
+        height: 20px;
+        background-color: #444;
+        position: relative;
+        top: 20px;
+      }
+      .contact {
+        background-color: white;
+        height: 220px;
+        margin: 10px;
+      }
+      .address {
+
+      }
+      .link {
+        color: #6a4592;
+      }
+      @keyframes color {
+        0%   {border-color: #ff0000;}
+        20%   {border-color: #ff00ff;}
+        40%  {border-color: #0000ff;}
+        60%  {border-color: #00ffff;}
+        80%   {border-color: #00ff00;}
+        100% {border-color: #ffff00;}
+      }
+
+      @-webkit-keyframes color {
+        0%   {border-color: #ff0000;}
+        20%   {border-color: #ff00ff;}
+        40%  {border-color: #0000ff;}
+        60%  {border-color: #00ffff;}
+        80%   {border-color: #00ff00;}
+        100% {border-color: #ffff00;}
+      }
+
+      @media (max-width: 1000px) {
+        .profile-pic {
+          width: 120px;
+          height: 120px;
+          border-radius: 120px;
+        }
+        .little-pic {
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+        }
+
+      }
+
+      @media (max-width: 770px) {
+        .profile {
+          height: 170px;
+        }
+      }
+
+      @media (max-width: 380px) {
+        .profile-pic {
+          width: 90px;
+          height: 90px;
+          border-radius: 90px;
+        }
+        .profile {
+          height: 150px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        WIDDLE WOCKETS
+      </div>
+      <a href="/">
+        <div class="home">
+          HOME
+        </div>
+      </a>
+    </header>
+    <div class="container">
+
+      <!-- LEFT SIDE!! -->
+      <div class="col-sm-6">
+
+        <!-- PROFILE -->
+        <div class="profile">
+
+          <!-- MOM PICK AND NAME -->
+          <div class="name">
+            <h3>DIANA GROVER<br>
+              <i>
+                <small>
+                  LITTLE ROCKET: CARLY GROVER
+                </small>
+              </i>
+            </h3>
+          </div>
+          <div class="pics">
+            <div class="profile-pic">
+            </div>
+
+            <div class="little-pic">
+            </div>
+          </div>
+        </div>
+
+        <!-- RECENTLY PLAYED -->
+        <div class="rec-played">
+          <h3>RECENTLY PLAYED</h3>
+          <div class="played">
+          </div>
+          Space Jam: Release 1996
+        </div>
+
+        <!-- ACTIVITY POINTS -->
+        <div class="activity-points">
+          <h3>ACTIVITY POINTS</h3>
+          <h4>33,420!</h4>
+          <div class="prog">
+          </div>
+          <h4>80 POINTS TILL NEXT REWARD!</h4>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE!! -->
+      <div class="col-sm-6">
+        <!-- CONTACT -->
+        <div class="info">
+          <h3>EMAIL</h3>
+          <p class="link">diana.r.glover@gmail.com<br><small><i>Primary</i></small></p>
+          <h3>PHONE</h3>
+          <p class="link">810-555-9876<br><small><i>Primary Mobile</i></small></p>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="info">
+          <h3>Address</h3>
+          <p><input type="text" name="name" placeholder="Barker St."></p>
+          <p><input type="text" name="name" placeholder="Louisville"></p>
+          <p><input type="text" name="name" placeholder="TN"></p>
+          <p><input type="text" name="name" placeholder="3777"></p>
+        </div>
+
+        <!-- CARD INFO -->
+        <div class="info">
+          <h3>CARD INFORMATION</h3>
+          <div class="card">
+            <div class="card-line">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

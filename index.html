@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Widdle Wockets</title>
+    <style media="screen">
+
+    div {
+      color: black;
+    }
+    header {
+      height: 110px;
+    }
+    h2 {
+      text-align: center;
+    }
+    h3 {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+    .circle {
+      color: white;
+      background-color: #fdbf0d;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 70px;
+      float: left;
+      margin: 20px 5px 5px 5px;
+      font-size: 11px;
+    }
+    .account {
+      margin-right: 12px;
+    }
+    .buttons {
+      float: right;
+    }
+    .title {
+      color: black;
+      font-size: 45px;
+      float: left;
+      margin: 20px 0 0 8px;
+    }
+    .main {
+      margin: 10px 10px 0 10px;
+      height: 300px;
+      background: url("https://d3uf2ssic990td.cloudfront.net/images/5031/413b4a3e-5bf8-494b-bfda-ed9488ca3b0d/kids.jpg");
+      background-size: cover;
+    }
+    .videos {
+      background-color: #ccc;
+      float: left;
+      height: 180px;
+      width: 155px;
+      margin: 10px;
+    }
+    .videos_1{
+      background: url("https://i.pinimg.com/736x/04/25/de/0425dedcbeb3fbbf52bca4f5ff9b180d--the-muppet-movie-the-muppets.jpg");
+      background-size: cover;
+    }
+
+    .videos_2{
+      background: url("https://i.pinimg.com/736x/82/9a/e9/829ae96b52f9a9daea88c24f0da04814--air-bud-disney-films.jpg");
+      background-size: cover;
+    }
+
+    .videos_3{
+      background: url("https://i.pinimg.com/736x/26/77/41/26774175f68bf3a732f97b28b0737a01--watch-movies-top-movies.jpg");
+      background-size: cover;
+    }
+
+    .videos_4{
+      background: url("https://i.pinimg.com/originals/a2/1f/6d/a21f6d5862d8f1f249a7f475c4eed5c7.jpg");
+      background-size: cover;
+    }
+
+    .vids {
+      margin: auto;
+      width: 700px;
+      height: 200px;
+      /*background-color: black;*/
+      overflow: hidden;
+    }
+    .queue {
+      width: 700px;
+      height: 400px;
+      margin: 0 auto;
+      
+
+    }
+    .big {
+      height: 400px;
+      width: 310px;
+      background-color: #454456;
+      float: left;
+      background: url("https://c1.staticflickr.com/2/1148/5107592601_37be600dda_b.jpg");
+      background-size: cover;
+    }
+    .small {
+      width: 370px;
+      height: 400px;
+      float: right;
+    }
+    .sItem {
+      width: 185px;
+      height: 200px;
+
+    }
+
+    .sItem_1 {
+      background: url("http://smvdiscoverymuseum.org/wp-content/uploads/2017/05/kidsinspace1.jpg");
+      background-size: cover;
+      border: 5px solid #02c8f0;
+    }
+    .sItem_2 {
+      background: url("https://kidsarekids.org.au/wp-content/uploads/2015/04/2.jpg");
+      background-size: cover;
+      border: 5px solid #f44545;
+    }
+    .sItem_3 {
+      background: url("https://img.purch.com/rc/640x415/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NC84Nzkvb3JpZ2luYWwvc2F0dXJuLWludGVyc3RlbGxhci1kdXN0LWNhc3NpbmkuanBn");
+      background-size: cover;
+      border: 5px solid #fffe69;
+    }
+    .sItem_4 {
+      background: url("https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg");
+      background-size: cover;
+      border: 5px solid #0fdb79;
+    }
+    .small-cont {
+      float: right;
+
+    }
+    .small-cont2 {
+      float: left;
+
+    }
+    .copy {
+      max-width: 700px;
+      height: 300px;
+      margin: 30px auto;
+      font-size: 22px;
+      text-align: center;
+
+    }
+
+    @media (max-width: 700px) {
+      .vids{
+        width: 350px;
+        /*background-color: gray;*/
+      }
+      .small {
+        float: none;
+      }
+      .big {
+        float: none;
+        margin: 0 auto;
+
+      }
+      .queue{
+        width: 370px;
+        height: 800px;
+      }
+
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        WIDDLE WOCKETS
+      </div>
+      <div class="buttons">
+        <a href="/Rocket">
+          <div class="circle home">
+            ROCKET!
+          </div>
+        </a>
+        <a href="/Account">
+          <div class="circle account">
+            ACCOUNT
+          </div>
+        </a>
+        <a href="/Lesson">
+          <div class="circle account">
+            LESSON
+          </div></a>
+      </div>
+    </header>
+    <div class="main">
+    </div>
+    <!-- Video Section -->
+    <div class="vids">
+      <div class="videos videos_1">
+        Video thumbnail
+      </div>
+      <div class="videos videos_2">
+        Video thumbnail
+      </div>
+      <div class="videos videos_3">
+        Video thumbnail
+      </div>
+      <div class="videos videos_4">
+        Video thumbnail
+      </div>
+    </div>
+    <h2>QUEUE</h2>
+    <!-- Queue section -->
+    <div class="queue">
+      <!-- Big thumb -->
+      <div class="big">
+        <h3>Recently Played</h3>
+      </div>
+      <!-- Small Pics -->
+      <div class="small">
+        <div class="small-cont">
+          <div class="sItem sItem_1">
+          </div>
+          <div class="sItem sItem_2">
+          </div>
+        </div>
+        <div class="small-cont2">
+          <div class="sItem sItem_3">
+          </div>
+          <div class="sItem sItem_4">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <h2>What we're all about</h2>
+      Our world is constantly growing. We are getting too big for the earth, so we are expanding into space! Right now, the majority of astronauts are naturally talented individuals who have always aspired to be astronauts. Our goal is to present space as a dream for our little rockets! We want to give children the opportunity to see the world as an astronaut does! Another goal of ours is to increase performance in STEM related subjects among children.
+    </div>
+
+  </body>
+</html>
